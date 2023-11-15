@@ -23,6 +23,16 @@ class Calculator:
     def square_root(self, x):
         return math.sqrt(x)
 
+<<<<<<< HEAD
+=======
+
+
+    def square_root(self, x):
+
+        return math.sqrt(x)
+
+
+>>>>>>> feature/sqrt
 
 if __name__ == "__main__":
 
