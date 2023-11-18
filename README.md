@@ -1,5 +1,5 @@
 # Hero Vired Git and Github Assignment
-
+-Reviewing was done by Janisha, @janisha42 
 # CalculatorPlus
 
 Simple calculator to perform basic math operations (+-*/). Also adding square root as another feature.
@@ -17,13 +17,12 @@ git checkout -b main
 git checkout -b dev
 ```
 
-### 4. Push the code to the dev branch and V1 release
+### 3. Push the code to the dev branch and V1 release
 ```bash
 git checkout main
 git merge dev
 git tag -a v1.0 -m "V1"
 git push origin main --tags
-
 ```
 
 ## Steps to Add Square Root Functionality:
@@ -32,29 +31,28 @@ git push origin main --tags
 - Push the python file via feature/sqrt branch
 - Merge the Branch with the main branch
 
-  ### 4. Push the code to the dev branch and V1 release
 ```bash
-git checkout main
-git merge dev
-git tag -a v1.0 -m "V1"
-git push origin main --tags
 
+git checkout -b feature/sqrt
+git add geometrycalculator.py
+git commit -m "Implement square root feature and fix divide bug"
+git push origin feature/sqrt
 ```
 
 # Geometry Calculator
 
-This repository contains a simple Python program that calculates the area of a circle and the area of a rectangle. Additionally, it demonstrates the integration of Git LFS (Large File Storage) to handle large binary files efficiently.
+Program to Calculate Circle and Rectangular Area
 
 ## Geometry Calculator Steps:
 
-### Feature Development Workflow:
+
 
 1. **Create a New Branch and Push Initial File (Circle Area):**
     ```bash
     git checkout main
     git checkout -b feature/circle-area
     git add geometrycalculator.py
-    git commit -m "Initial commit: geometrycalculator.py"
+    git commit -m "Commit 1"
     git push origin feature/circle-area
     ```
 
@@ -84,7 +82,7 @@ This repository contains a simple Python program that calculates the area of a c
 6. **Complete and Push Circle Area Feature:**
     ```bash
     git add .
-    git commit -m "Implement circle area feature"
+    git commit -m "Implementing circle area feature"
     git push origin feature/circle-area
     ```
 
@@ -97,24 +95,17 @@ This repository contains a simple Python program that calculates the area of a c
 8. **Complete and Push Rectangle Area Feature:**
     ```bash
     git add .
-    git commit -m "Implement rectangle area feature"
+    git commit -m "Implementing rectangle area feature"
     git push origin feature/rectangle-area
     ```
 
-### Pull Requests and Merging:
-
-9. **Create Pull Requests:**
-    - Create pull requests for both branches targeting the 'geometry-calculator' branch on your Git hosting platform.
-
-10. **Review and Merge:**
-    - Have another team member or reviewer review your pull requests.
-    - After receiving approval, merge both pull requests into the 'geometry-calculator' branch.
-
+9. **Review and Merging**
+  -Reviewing was done by Janisha, @janisha42 and then merged.
 ---
 
-# Git LFS Integration
+# Git LFS 
 
-This repository demonstrates the integration of Git LFS (Large File Storage) to efficiently handle large binary files. A large binary file (`large_file.bin`) was added, committed, and pushed to the repository.
+A large binary file was added to the repository using LFS integration
 
 ## Git LFS Steps:
 
@@ -123,13 +114,13 @@ This repository demonstrates the integration of Git LFS (Large File Storage) to 
     git lfs install
     git lfs track "*.bin"
     git add .gitattributes
-    git commit -m "Initialize Git LFS"
+    git commit -m "LFS"
     ```
 
 2. **Commit and Push Large Binary File:**
     ```bash
-    git add large_file.bin
-    git commit -m "Add large binary file using Git LFS"
+    git add 1GB.bin
+    git commit -m "Adding 1GB File"
     git push origin main
     ```
 
@@ -144,6 +135,4 @@ This repository demonstrates the integration of Git LFS (Large File Storage) to 
     git checkout main
     ```
 
----
 
-Feel free to customize this README based on your specific project details and add any additional sections or details you find relevant.
